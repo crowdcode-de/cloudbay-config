@@ -2,7 +2,7 @@ message: "hello tomorrow"
 io:
   crowdcode:
     greeting:
-      welcome-message: "Greetings From The Config Server!"
+      welcome-message: "Greetings From The Config Server! - TEST"
 spring:
   boot:
     admin:
