@@ -1,0 +1,10 @@
+message: "hello tomorrow"
+io:
+  crowdcode:
+    greeting:
+      welcome-message: "Hallo Spring Boot vom Config Server Test"
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9091
