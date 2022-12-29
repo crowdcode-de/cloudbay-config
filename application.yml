@@ -3,11 +3,13 @@ io:
   crowdcode:
     greeting:
       welcome-message: "Welcome To The Greeting Service!"
-      welcome-url: "http://localhost:8300/greeting-service/sayHello"
       goodbye-message: "Goodbye From The Greeting Service!"
-      goodbye-url: "http://localhost:8300/greeting-service/sayGoodBye"
-    timeservice:
-      url: "http://localhost:8400/time-service/now"
+    services:
+      time:    
+        url: "http://localhost:8400/time-service/now"
+      greeting:
+        goodbye-url: "http://localhost:8300/greeting-service/sayGoodBye"
+        welcome-url: "http://localhost:8300/greeting-service/sayHello"
       
 spring:
   boot:
