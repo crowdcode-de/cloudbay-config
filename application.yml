@@ -1,13 +1,17 @@
-message: "hello tomorrow"
+message: "Hello CloudBay Developer!"
 io:
   crowdcode:
     greeting:
-      welcome-message: "Greetings From The Config Server! ERNEUT"
+      welcome-message: "Greetings From The Config Server!"
+    timeservice:
+      url: "http://localhost:8400/time-service/now"
+      
 spring:
   boot:
     admin:
       client:
         url: http://localhost:9091
+
 management:
   endpoint:
     health:
@@ -19,3 +23,11 @@ management:
     web:
       exposure:
         include: "*"
+  tracing:
+    sampling:
+      probability: 1.0
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+
