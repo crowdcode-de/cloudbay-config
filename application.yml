@@ -2,7 +2,7 @@ message: "Hello CloudBay Developer!"
 io:
   crowdcode:
     greeting:
-      welcome-message: "Welcome To The Greeting Service!"
+      welcome-message: "Herzlich Willkommen!"
       goodbye-message: "Goodbye From The Greeting Service!"
     services:
       time:    
